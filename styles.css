@@ -219,13 +219,34 @@ main .explore {
 
 .item-card {
   width: 500px;
-  height: 80px;
+  height: 100px;
   display: flex;
+
+  justify-content: center;
+  align-items: center;
   background-color: white;
   padding: 20px;
   border-radius: 15px;
+  gap: 20px;
 }
 .item-card img {
   width: 80px;
   height: 50px;
+}
+
+.container-menu {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cartbtn {
+  background-color: rgb(44, 131, 44);
+  color: white;
+  border: 0;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
 }

@@ -37,16 +37,25 @@ function displayItems(data) {
     const itemDescription = document.createElement("p");
     const itemName = document.createElement("h2");
     const itemPrice = document.createElement("p");
+    const addCartBtn = document.createElement("button");
 
     // Loading data to elements
     itemImage.src = `${image}`;
-    itemDescription.textContent = Description;
+    itemDescription.textContent = Description.slice(0, 50);
     itemName.innerHTML = name;
     itemPrice.textContent = `R${price.toFixed(2)}`;
     itemCard.classList.add("item-card");
+    addCartBtn.classList.add("cartbtn");
+    addCartBtn.textContent = "Add to Cart";
     // appending to Card
 
-    itemCard.append(itemImage, itemDescription, itemName, itemPrice);
+    itemCard.append(
+      itemImage,
+      //   itemDescription,
+      itemName,
+      itemPrice,
+      addCartBtn
+    );
     menuContainer.append(itemCard);
   });
 }

@@ -10,7 +10,8 @@ async function getMenu(path) {
   try {
     const resposne = await fetch(path);
     const data = await resposne.json();
-    const menuItems = Object.values(data);
+    const menuItems = data["menu"];
+
     displayItems(menuItems);
   } catch (error) {
     console.log("Opps erro from Resource", error.message);
@@ -27,7 +28,7 @@ getMenu(base_path_url);
  * it creates a card and display the data according to the specified properties
  */
 function displayItems(data) {
-  data.forEach((item) => {
-    console.log(item);
+  data.forEach((element) => {
+    console.log(element);
   });
 }

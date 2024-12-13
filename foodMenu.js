@@ -29,7 +29,19 @@ getMenu(base_path_url);
  */
 function displayItems(data) {
   data.forEach((element) => {
-    const { Descriprion, name, price } = element;
-    console.log(Descriprion, name);
+    const { Description, name, price, image } = element;
+
+    // creates a DOM element
+    const itemCard = document.createElement("div");
+    const itemImage = document.createElement("img");
+    const itemDescription = document.createElement("p");
+    const itemName = document.createElement("h2");
+    const itemPrice = document.createElement("p");
+
+    // Loading data to elements
+    itemImage.src = `${image}`;
+    itemDescription.textContent = Description;
+    itemName.innerHTML = name;
+    itemPrice.textContent = `R${price.toFixed(2)}`;
   });
 }

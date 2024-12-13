@@ -251,6 +251,40 @@ main .explore {
   cursor: pointer;
 }
 
+.navbar-toggler {
+  right: 10px;
+  position: absolute;
+}
+.navbar-toggler button {
+  background: none;
+  color: white;
+  font-size: 24px;
+  border: 0;
+  cursor: pointer;
+}
+
 /* Media screen */
-@media screen {
+@media screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    justify-content: start;
+    height: 50vh;
+    padding: 0.9em 2em;
+  }
+  .logo {
+    display: none;
+  }
+  ul {
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    margin-left: 10px !important;
+  }
+  .cart-toggler {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 100px;
+    margin-left: 10px !important;
+  }
 }

@@ -7,3 +7,10 @@
 /**
  * TODO: we must use localstorage or firebase to cart store items
  */
+
+const navbarToggler = document.querySelector("#toggler");
+
+//events
+navbarToggler.onclick = () => {
+  console.log("Cliked");
+};

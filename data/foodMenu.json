@@ -3,25 +3,25 @@
     {
       "name": "Rolls",
       "price": 1200,
-      "Description": "",
+      "Description": "Soft and freshly baked bread rolls, perfect for any meal.",
       "image": "../images/bread.jpg"
     },
     {
       "name": "Sosage",
       "price": 1200,
-      "Description": "",
+      "Description": "Juicy and flavorful sausage, grilled to perfection.",
       "image": "../images/bread.jpg"
     },
     {
       "name": "Chips",
       "price": 1200,
-      "Description": "",
+      "Description": "Crispy and golden potato chips, seasoned to taste.",
       "image": "../images/bread.jpg"
     },
     {
       "name": "Candy",
       "price": 1200,
-      "Description": "",
+      "Description": "Sweet and colorful candies, a delightful treat for all ages.",
       "image": "../images/bread.jpg"
     }
   ]

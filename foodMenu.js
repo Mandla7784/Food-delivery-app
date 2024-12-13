@@ -29,6 +29,7 @@ getMenu(base_path_url);
  */
 function displayItems(data) {
   data.forEach((element) => {
-    console.log(element);
+    const { Descriprion, name, price } = element;
+    console.log(Descriprion, name);
   });
 }

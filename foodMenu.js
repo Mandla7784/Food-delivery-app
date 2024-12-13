@@ -43,5 +43,10 @@ function displayItems(data) {
     itemDescription.textContent = Description;
     itemName.innerHTML = name;
     itemPrice.textContent = `R${price.toFixed(2)}`;
+    itemCard.classList.add("item-card");
+    // appending to Card
+
+    itemCard.append(itemImage, itemDescription, itemName, itemPrice);
+    menuContainer.append(itemCard);
   });
 }

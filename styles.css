@@ -216,3 +216,16 @@ main .explore {
   transform: translateY(-5px);
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
+.item-card {
+  width: 500px;
+  height: 80px;
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+.item-card img {
+  width: 80px;
+  height: 50px;
+}

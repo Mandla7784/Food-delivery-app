@@ -1,0 +1,28 @@
+{
+  "menu": [
+    {
+      "name": "Rolls",
+      "price": 1200,
+      "Description": "",
+      "image": "../images/bread.jpg"
+    },
+    {
+      "name": "Sosage",
+      "price": 1200,
+      "Description": "",
+      "image": "../images/bread.jpg"
+    },
+    {
+      "name": "Chips",
+      "price": 1200,
+      "Description": "",
+      "image": "../images/bread.jpg"
+    },
+    {
+      "name": "Candy",
+      "price": 1200,
+      "Description": "",
+      "image": "../images/bread.jpg"
+    }
+  ]
+}

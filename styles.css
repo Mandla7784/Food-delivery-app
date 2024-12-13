@@ -262,9 +262,15 @@ main .explore {
   border: 0;
   cursor: pointer;
 }
-
+.burger {
+  display: none;
+}
+.open {
+  display: flex;
+  background-color: black;
+}
 /* Media screen */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .navbar {
     flex-direction: column;
     justify-content: start;
@@ -273,6 +279,20 @@ main .explore {
   }
   .logo {
     display: none;
+  }
+
+  .search-box {
+    display: none !important;
+  }
+  .burger {
+    top: 5px;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+  }
+  .open {
+    display: block;
   }
   ul {
     flex-direction: column;
@@ -286,5 +306,9 @@ main .explore {
     bottom: 0;
     margin-bottom: 100px;
     margin-left: 10px !important;
+  }
+  .hide {
+    display: none;
+    transition: all ease-in-out;
   }
 }

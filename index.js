@@ -9,8 +9,17 @@
  */
 
 const navbarToggler = document.querySelector("#toggler");
-
+const navbar = document.querySelector(".navbar");
+const burgerIcon = document.querySelector(".burger");
 //events
 navbarToggler.onclick = () => {
-  console.log("Cliked");
+  if (navbar.classList.contains("hide")) {
+    navbar.classList.remove("hide");
+  } else {
+    navbar.classList.add("hide");
+  }
+};
+
+burgerIcon.onclick = () => {
+  navbar.classList.remove("hide");
 };

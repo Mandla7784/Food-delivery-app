@@ -59,3 +59,7 @@ function displayItems(data) {
     menuContainer.append(itemCard);
   });
 }
+
+// Categries
+
+function getCategories() {}

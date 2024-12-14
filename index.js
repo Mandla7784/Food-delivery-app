@@ -22,11 +22,3 @@ navbarToggler.onclick = () => {
 burgerIcon.onclick = () => {
   navbar.classList.remove("hide");
 };
-
-// Cart functionality
-const allCartButtons = document.querySelectorAll(".cartbtn");
-allCartButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    console.log("Clickedd");
-  });
-});

@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const base_path_url = "./data/foodMenu.json";
   const menuContainer = document.querySelector(".container-menu");
   const itemsTobeStoredOnCart = [];
+
   /**
    *
    * @param {*} path

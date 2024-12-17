@@ -261,6 +261,15 @@ main .explore {
   font-size: 24px;
   border: 0;
   cursor: pointer;
+  display: none;
+}
+.navbar button {
+  background: none;
+  color: white;
+  font-size: 24px;
+  border: 0;
+  margin-right: 0.5em;
+  cursor: pointer;
 }
 .burger {
   display: none;

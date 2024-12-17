@@ -37,6 +37,11 @@ body {
   margin: 0;
   gap: 20px;
 }
+.shoping-bag {
+  text-decoration: none !important;
+  color: white;
+  margin-right: 0.5em;
+}
 
 .navbar ul a {
   text-decoration: none;

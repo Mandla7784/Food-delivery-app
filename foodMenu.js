@@ -75,5 +75,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Categries
 
-  function getCategories() {}
+  function getCategories() {
+    fetch("./data/catergories.json")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data["categories"]);
+      });
+  }
+  getCategories();
 });

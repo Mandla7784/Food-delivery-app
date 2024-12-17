@@ -40,6 +40,11 @@ document.addEventListener("DOMContentLoaded", () => {
       const itemPrice = document.createElement("p");
       const addCartBtn = document.createElement("button");
 
+      // events on cart '
+      addCartBtn.onclick = () => {
+        console.log("Cclicked");
+      };
+
       // Loading data to elements
       itemImage.src = `${image}`;
       itemDescription.textContent = Description.slice(0, 50);

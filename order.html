@@ -14,36 +14,69 @@
     />
     <script defer src="foodMenu.js"></script>
     <script defer src="index.js"></script>
+    <style>
+      main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+      }
+      main form {
+        width: 500px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="number"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: 2px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 15px;
+      }
+      input:focus {
+        border-color: #007bff;
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+      }
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      fieldset {
+        border: none;
+      }
+      legend {
+        font-size: 1.5em;
+      }
+      button {
+        padding: 10px;
+        background-color: #ec9522;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #ee8c0c;
+      }
+      @media (max-width: 600px) {
+        main form {
+          width: calc(100% - 40px);
+        }
+      }
+    </style>
   </head>
-  <style>
-    main {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      background-color: white;
-    }
-    main form {
-      width: 500px;
-      height: 500px;
-      background-color: white;
-      display: flex;
-      justify-content: start;
-
-      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    }
-    .form-group {
-      display: flex;
-      flex-direction: column;
-    }
-    fieldset {
-      width: 100%;
-      height: 100%;
-    }
-  </style>
   <body>
-    <!-- navbar -->
     <nav class="navbar">
       <img class="logo" src="./images/logo.jpg" alt="" />
       <ul>
@@ -76,16 +109,17 @@
 
           <div class="form-group">
             <label for="Email">Email</label>
-            <input type="email" placeholder="Enter Your Name" />
+            <input type="email" placeholder="Enter Your Email" />
           </div>
           <div class="form-group">
             <label for="phone">Phone number</label>
-            <input type="number" placeholder="Enter Your Name" />
+            <input type="number" placeholder="Enter Your Phone Number" />
           </div>
           <div class="form-group">
             <label for="Address">Address</label>
-            <input type="text" placeholder="Enter Your Name" />
+            <input type="text" placeholder="Enter Your Address" />
           </div>
+          <button type="submit">Submit Order</button>
         </fieldset>
       </form>
     </main>

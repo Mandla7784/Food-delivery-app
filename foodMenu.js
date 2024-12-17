@@ -43,7 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // events on cart '
       addCartBtn.onclick = () => {
-        itemsTobeStoredOnCart.push(itemCard);
+        itemsTobeStoredOnCart.push(itemCard.innerHTML);
+
         localStorage.setItem(
           "cartitems",
           JSON.stringify(itemsTobeStoredOnCart)

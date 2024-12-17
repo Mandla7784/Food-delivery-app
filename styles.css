@@ -296,6 +296,7 @@ main .explore {
     justify-content: start;
     height: 50vh;
     padding: 0.9em 2em;
+    position: relative;
   }
   .logo {
     display: none;
@@ -326,6 +327,12 @@ main .explore {
     bottom: 0;
     margin-bottom: 100px;
     margin-left: 10px !important;
+  }
+  .navbar-toggler button {
+    display: block !important;
+    cursor: pointer;
+
+    z-index: 100;
   }
   .hide {
     display: none;

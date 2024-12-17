@@ -65,9 +65,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function getCategories() {}
 });
-
-window.onload = () => {
-  // Cart functionality
-  const cartButton = document.querySelector(".cartbtn");
-  console.log(cartButton);
-};

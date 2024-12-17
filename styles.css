@@ -149,6 +149,8 @@ main .explore {
   background-repeat: no-repeat;
   border-radius: 0.625em;
   position: relative;
+  cursor: pointer;
+  transition: all ease 0.3s;
 }
 
 .explore .card-1 {
@@ -161,6 +163,10 @@ main .explore {
 
 .explore .card-3 {
   background-image: url("./images/pizza.jpg");
+}
+
+.explore .card:hover {
+  transform: translateY(-10px);
 }
 
 .bottom-text {

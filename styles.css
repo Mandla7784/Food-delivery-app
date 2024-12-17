@@ -260,6 +260,12 @@ main .explore {
   padding: 10px;
   inline-size: 200px;
   cursor: pointer;
+  border-radius: 15px;
+  width: 100px;
+  transition: all ease 0.3s;
+}
+.cartbtn:hover {
+  background-color: rgb(255, 100, 11);
 }
 
 .navbar-toggler {
@@ -289,6 +295,20 @@ main .explore {
   display: flex;
   background-color: black;
 }
+
+/* Cart styles  */
+.added-cart {
+  width: 100%;
+  background-color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cart-items {
+}
+
 /* Media screen */
 @media screen and (max-width: 600px) {
   .navbar {

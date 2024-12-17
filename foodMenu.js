@@ -75,12 +75,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Categries
 
+  let catergoriesDiv = document.querySelector(".categories");
   function getCategories() {
     fetch("./data/catergories.json")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data["categories"]);
+        const items = data["categories"];
+
+        renderCatergories(items);
       });
   }
   getCategories();
+
+  /**
+   *
+   * @param {*} items
+   * this is a function to displat catergories to the catergory
+   *page
+   */
+  function renderCatergories(items) {
+    items.forEach((item) => {
+      const { name, price, img } = item;
+      catergoriesDiv.innerHTML += /*html*/ `
+       
+        <div class="card">
+          <img src="${img}" alt="" />
+          <p>R ${price}</p>
+          <h3>${name}</h3>
+          <a hre="/index.html" >
+
+            <button>More</button>
+          </a>
+        </div>
+    
+    
+    `;
+    });
+  }
 });

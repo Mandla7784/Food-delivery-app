@@ -15,6 +15,33 @@
     <script defer src="foodMenu.js"></script>
     <script defer src="index.js"></script>
   </head>
+  <style>
+    main {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: white;
+    }
+    main form {
+      width: 500px;
+      height: 500px;
+      background-color: white;
+      display: flex;
+      justify-content: start;
+
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+    }
+    fieldset {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
   <body>
     <!-- navbar -->
     <nav class="navbar">
@@ -36,6 +63,32 @@
       </div>
     </nav>
     <img class="burger" style="width: 20px" src="/images/burger.png" alt="" />
+    <main>
+      <h1>Fill this form to confirm your order.</h1>
+
+      <form action="" class="order-form">
+        <fieldset>
+          <legend>Delivery Details</legend>
+          <div class="form-group">
+            <label for="name">Full name</label>
+            <input type="text" placeholder="Enter Your Name" />
+          </div>
+
+          <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" placeholder="Enter Your Name" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone number</label>
+            <input type="number" placeholder="Enter Your Name" />
+          </div>
+          <div class="form-group">
+            <label for="Address">Address</label>
+            <input type="text" placeholder="Enter Your Name" />
+          </div>
+        </fieldset>
+      </form>
+    </main>
     <script src="cartManger.js"></script>
   </body>
 </html>

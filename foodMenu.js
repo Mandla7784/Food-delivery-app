@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const base_path_url = "./data/foodMenu.json";
   const menuContainer = document.querySelector(".container-menu");
+  const itemsTobeStoredOnCart = [];
   /**
    *
    * @param {*} path
@@ -42,7 +43,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // events on cart '
       addCartBtn.onclick = () => {
-        console.log("Cclicked");
+        itemsTobeStoredOnCart.push(itemCard);
+        localStorage.setItem(
+          "cartitems",
+          JSON.stringify(itemsTobeStoredOnCart)
+        );
       };
 
       // Loading data to elements
@@ -57,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       itemCard.append(
         itemImage,
-        //   itemDescription,
+
         itemName,
         itemPrice,
         addCartBtn
